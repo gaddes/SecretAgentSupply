@@ -1,0 +1,49 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  color: white;
+}
+
+/* body {
+  display: flex;
+  flex-direction: column;
+} */
+
+header, footer {
+  background-color: black;
+}
+
+header, .content, footer {
+  width: 960px;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 1.5rem;
+  width: auto;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+}
+
+header span {
+  padding: 0.66rem 0;
+}
+
+/* Main Content */
+.content {
+
+}
+
+/* Title & Background Image */
+.content-header {
+  height: 25rem;
+}
+
+/* Navigation Bar */
+
+/* Footer */
