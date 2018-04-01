@@ -4,11 +4,6 @@ html {
   color: white;
 }
 
-/* body {
-  display: flex;
-  flex-direction: column;
-} */
-
 h1, h4 {
   font-weight: bold;
 }
@@ -46,7 +41,8 @@ h1, h4 {
 }
 
 .mainbanner .headline {
-  margin-top: 9rem;
+  position: relative;
+  top: 9rem;
   padding: 2rem 3rem;
   width: 20rem;
   background-color: black;
@@ -74,7 +70,7 @@ h1, h4 {
   .mainbanner .headline {
     width: 100%;
     padding: 1rem 2rem;
-    margin-top: 11rem;
+    top: 11rem;
   }
   .mainbanner .headline h4 { font-size: .77rem; }
   .mainbanner .headline h1 { font-size: 1rem; }
