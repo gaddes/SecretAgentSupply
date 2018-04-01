@@ -16,7 +16,6 @@ h1, h4 {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 /* Header */
@@ -132,7 +131,6 @@ h1, h4 {
   justify-content: center;
   align-items: center;
   padding: 2rem 0;
-  border: 1px solid red;
   height: 9rem;
 }
 
