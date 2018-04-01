@@ -13,10 +13,8 @@ h1, h4 {
   font-weight: bold;
 }
 
-
-
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   border: 1px solid red;
 }
@@ -61,6 +59,28 @@ h1, h4 {
   line-height: 1.2;
 }
 
+@media only screen and (max-width: 1024px) {
+  .mainbanner h4 {
+    font-size: 0.8rem;
+  }
+  .mainbanner h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .mainbanner {
+    height: 15rem;
+  }
+  .mainbanner .headline {
+    width: 100%;
+    padding: 1rem 2rem;
+    margin-top: 11rem;
+  }
+  .mainbanner .headline h4 { font-size: .77rem; }
+  .mainbanner .headline h1 { font-size: 1rem; }
+}
+
 /* Navigation Bar */
 
 .navbar {
@@ -71,6 +91,21 @@ h1, h4 {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem 0;
+}
+
+.navbar .mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar .mobile-nav {
+    display: block;
+    text-align: center;
+    padding: 0.75rem 0;
+  }
+  .navbar .desktop-nav {
+    display: none;
+  }
 }
 
 /* Products */
@@ -112,6 +147,18 @@ h1, h4 {
   text-align: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .products .item { width: 47%; }
+  .products .thermal-glasses { display: none; }
+}
+
+@media only screen and (max-width: 470px) {
+  .products .container { justify-content: center; }
+  .products .item { width: 90%; }
+  .products .thermal-glasses { display: none; }
+  .products .cellular-watch { display: none; }
+}
+
 /* Company Info */
 
 .companyinfo {
@@ -137,6 +184,18 @@ h1, h4 {
 
 .companyinfo span {
   color: black;
+}
+
+@media only screen and (max-width: 470px) {
+  .companyinfo .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .companyinfo .item {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
 }
 
 /* Footer */
